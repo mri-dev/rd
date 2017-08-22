@@ -1,0 +1,107 @@
+/* DinTextCondPro-Regular */
+@font-face {
+  font-family: 'Din Cond';
+  src: url("../fonts/din/DinTextCondPro-Regular.eot");
+  src: url("../fonts/din/DinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DinTextCondPro-Regular.woff") format("woff"), url("../fonts/din/DinTextCondPro-Regular.ttf") format("truetype"), url("../fonts/din/DinTextCondPro-Regular.svg#Din Cond") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* DinTextCondPro-Bold */
+@font-face {
+  font-family: 'Din Cond';
+  src: url("../fonts/din/DinTextCondPro-Bold.eot");
+  src: url("../fonts/din/DinTextCondPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/din/DinTextCondPro-Bold.woff") format("woff"), url("../fonts/din/DinTextCondPro-Bold.ttf") format("truetype"), url("../fonts/din/DinTextCondPro-Bold.svg#Din Cond") format("svg");
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* line 4, sass/style.scss */
+header .fusion-main-menu a {
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+/* line 8, sass/style.scss */
+header.fusion-is-sticky .fusion-main-menu a {
+  padding-top: 0 !important;
+}
+
+/* line 13, sass/style.scss */
+.footer-design-holder .tblwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+/* line 20, sass/style.scss */
+.footer-design-holder .tblwrapper.center-contents {
+  align-items: center;
+}
+/* line 25, sass/style.scss */
+.footer-design-holder .logo {
+  flex-basis: 20%;
+}
+/* line 28, sass/style.scss */
+.footer-design-holder .facebook {
+  flex-basis: 30%;
+}
+/* line 31, sass/style.scss */
+.footer-design-holder .infos {
+  flex-basis: 50%;
+  border: 1px solid #585858;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 20px !important;
+}
+/* line 38, sass/style.scss */
+.footer-design-holder .logo {
+  text-align: center;
+  padding-top: 10px !important;
+}
+/* line 41, sass/style.scss */
+.footer-design-holder .logo img {
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 48, sass/style.scss */
+.footer-design-holder .menu {
+  flex-basis: 40%;
+}
+/* line 53, sass/style.scss */
+.footer-design-holder .menu ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/* line 62, sass/style.scss */
+.footer-design-holder .social {
+  flex-basis: 25%;
+  text-align: center;
+}
+/* line 67, sass/style.scss */
+.footer-design-holder .contact {
+  font-size: 1.15em;
+  flex-basis: 35%;
+  line-height: 1.8;
+  font-family: 'Din Cond', sans-serif;
+}
+/* line 74, sass/style.scss */
+.footer-design-holder .copyright {
+  flex-basis: 100%;
+  padding-top: 15px;
+  line-height: 1.2;
+  font-size: 0.9em;
+  font-family: 'Din Cond', sans-serif;
+}
+/* line 83, sass/style.scss */
+.footer-design-holder > .tblwrapper > div {
+  padding: 0 20px;
+}
+
+/* line 88, sass/style.scss */
+.fusion-footer-widget-column {
+  margin: 0 !important;
+}

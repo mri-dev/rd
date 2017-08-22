@@ -1,0 +1,23 @@
+/* DinTextCondPro-Regular */
+@font-face {
+  font-family: 'Din Cond';
+  src: url('../fonts/din/DinTextCondPro-Regular.eot');
+  src: url('../fonts/din/DinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/din/DinTextCondPro-Regular.woff') format('woff'),
+       url('../fonts/din/DinTextCondPro-Regular.ttf') format('truetype'),
+       url('../fonts/din/DinTextCondPro-Regular.svg#Din Cond') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* DinTextCondPro-Bold */
+@font-face {
+  font-family: 'Din Cond';
+  src: url('../fonts/din/DinTextCondPro-Bold.eot');
+  src: url('../fonts/din/DinTextCondPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/din/DinTextCondPro-Bold.woff') format('woff'),
+       url('../fonts/din/DinTextCondPro-Bold.ttf') format('truetype'),
+       url('../fonts/din/DinTextCondPro-Bold.svg#Din Cond') format('svg');
+  font-style: bold;
+  font-weight: 700;
+}
