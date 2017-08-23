@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="social">
-        social
+        <?php echo do_shortcode("[socials]"); ?>
       </div>
       <div class="copyright">
         <?php echo Avada()->settings->get('footer_text'); ?>
