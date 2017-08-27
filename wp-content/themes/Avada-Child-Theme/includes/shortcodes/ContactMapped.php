@@ -1,7 +1,8 @@
 <?php
-class SocialsSc
+
+class ContactMappedSC
 {
-    const SCTAG = 'socials';
+    const SCTAG = 'contact-mapped';
 
     public function __construct()
     {
@@ -20,17 +21,13 @@ class SocialsSc
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
-              'position' => 'footer'
+
             )
         );
-
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
 
-        // Social icons
-        $social = new Avada_Social_Icons();
-        $icons_html = $social->render_social_icons(array('position' => $attr['position']));
-        $output .= $icons_html;
+        $output .= (new ShortcodeTemplates('ContactMapped'))->load_template();
         $output .= '</div>';
 
         /* Return the output of the tooltip. */
@@ -39,6 +36,6 @@ class SocialsSc
 
 }
 
-new SocialsSc();
+new ContactMappedSC();
 
 ?>

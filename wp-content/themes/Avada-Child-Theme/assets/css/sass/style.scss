@@ -46,7 +46,7 @@ header.fusion-is-sticky .fusion-main-menu a{
   }
 
   .menu {
-    flex-basis: 40%;
+    flex-basis: 35%;
 
     ul{
       li{
@@ -60,7 +60,7 @@ header.fusion-is-sticky .fusion-main-menu a{
   }
 
   .social{
-    flex-basis: 25%;
+    flex-basis: 30%;
     text-align: center;
   }
 
@@ -87,4 +87,225 @@ header.fusion-is-sticky .fusion-main-menu a{
 }
 .fusion-footer-widget-column{
   margin: 0 !important;
+}
+.widget .fusion-social-networks .fusion-social-networks-wrapper{
+  .fusion-social-network-icon{
+    background: #ffffff;
+    color: #242424;
+    padding: 8px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+  }
+}
+
+.company-quote{
+  background-color: $color-pr !important;
+  color: white;
+  padding: 40px 0 !important;
+  font-size: 1.8em !important;
+  font-family: "Din Cond";
+  line-height: 1.3;
+
+  .fusion-builder-row{
+    position: relative;
+
+    &:before{
+      pointer-events: none;
+      content:"​‌”";
+      position: absolute;
+      left: -7px;
+      top: 35px;
+      line-height: 1;
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.13);
+      font-family: "Crimson Text", serif;
+      z-index: 1;
+    }
+    &:after{
+      pointer-events: none;
+      content:"​‌”";
+      position: absolute;
+      right: -7px;
+      top: -5px;
+      line-height: 1;
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.13);
+      font-family: "Crimson Text", serif;
+      z-index: 1;
+    }
+  }
+
+  strong {
+    font-size:1.25em !important;
+  }
+  p {
+    margin: 0 !important;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.social-header{
+  float: right;
+  height: 100px;
+  margin-right: -100px;
+
+  .fusion-social-networks{
+    height: 100%;
+    position: relative;
+    .fusion-social-networks-wrapper{
+      margin-top: 35px;
+      margin-left: 15px;
+      a{
+        border: 3px solid $color-pr;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+header.fusion-is-sticky{
+  .social-header{
+    .fusion-social-networks{
+      .fusion-social-networks-wrapper{
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+.ugyfel-visszajelzesek-testimonials{
+  text-align: center;
+  margin: 25px 0 0 0;
+  font-size: 1.75em;
+  color: #767676;
+  .testimonial-content{
+    color: #999999;
+    line-height: 1.3;
+  }
+  .testimonial-client{
+    font-size: 0.85em;
+    padding-top: 8px;
+
+    .name {
+      color: #343434;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .company {
+      color: #e76669;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.contact-mapped-fw-holder{
+  background-color: #eaeaea !important;
+
+  .contact-mapped-holder{
+    & > .inside{
+      position: relative;
+      .map {
+        z-index: 10;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      & > .wrapper{
+        position: relative;
+        z-index: 20;
+      }
+    }
+  }
+
+  .tblwrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &.center-contents{
+      align-items: center;
+    }
+  }
+
+  .c-left {
+    flex-basis: 50%;
+  }
+  .c-right {
+    flex-basis: 50%;
+  }
+  .contactform{
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.75);
+
+    h3 {
+      text-transform: uppercase;
+      font-family: 'Din Cond';
+      font-size: 1.8em;
+      color: white;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .form {
+    margin: 0 -10px;
+    & > div {
+      padding: 10px;
+
+      input, textarea{
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.8);
+        border-width: 3px;
+        padding: 20px 15px;
+        font-size: 1.2em;
+        color: white;
+      }
+
+      textarea{
+        width: 100%;
+        max-width: 100%;
+        min-height: 220px;
+      }
+    }
+
+    & > div.name,
+    & > div.email {
+      flex-basis: 50%;
+    }
+    & > div.msg,
+    & > div.button{
+      flex-basis: 100%;
+    }
+    & > div.button{
+      text-align: right;
+
+      button{
+        background: $color-pr;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        border-width: 0;
+        padding: 15px 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  p{
+    margin: 0 !important;
+  }
 }
