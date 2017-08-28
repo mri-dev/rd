@@ -89,6 +89,8 @@ function custom_js_script_footer()
         $(window).resize(function(){
           var bcw = $('.fusion-footer-widget-area > .fusion-row').width();
           $('#contact-form-wrapper').width((bcw/2)-50+3);
+
+          $('.bloglister-holder.style-grid-2fav .item.square-simple').height($('.bloglister-holder.style-grid-2fav .item.square-simple').width());
         });
       })(jQuery);
     </script>
