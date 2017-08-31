@@ -91,6 +91,20 @@ function custom_js_script_footer()
           $('#contact-form-wrapper').width((bcw/2)-50+3);
 
           $('.bloglister-holder.style-grid-2fav .item.square-simple').height($('.bloglister-holder.style-grid-2fav .item.square-simple').width());
+          $('.cube-nav-holder .holder-wrapper .item.item-grafika, .cube-nav-holder .holder-wrapper .item.item-dekor, .cube-nav-holder .holder-wrapper .tbl-group.rendezveny')
+          .height($(window).width()/3);
+          $('.cube-nav-holder .holder-wrapper .tbl-group.marketing').height(($(window).width()/3)*2);
+          $('.cube-nav-holder .holder-wrapper .tbl-group.nyomtatas-web .tblwrapper .item.item-nyomtatas, .cube-nav-holder .holder-wrapper .tbl-group.nyomtatas-web .tblwrapper .item.item-web')
+          .height(($(window).width()/3)/2);
+          $('.bloglister-holder.style-grid-2fav > .item.item1,.bloglister-holder.style-grid-2fav > .item.item2').height(($(window).width()/2));
+        });
+
+        $('.slick-slider-app .strong-content').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          centerMode: true,
+          autoplaySpeed: 2000,
         });
       })(jQuery);
     </script>
